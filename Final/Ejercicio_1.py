@@ -1,4 +1,21 @@
+"""
+Todos los aeropuertos del mundo se encuentran identificados mediante códigos alfabéticos que se utilizan, entre otras cosas, 
+para la venta de pasa-jes y para etiquetar el equipaje, a fin de poder embarcarlo en el vuelo correspondiente.
 
+Existen dos organizaciones dedicadas a la asignación de estos códigos, IATA (códigos de tres letras) e ICAO (códigos de cuatro letras). IATA (International Air 
+Transport Association) está formada por las aerolíneas comerciales  mientras que ICAO (International Civil Aviation Organization) depende de las Naciones Unidas y 
+agrupa a las autoridades aeronáuticas de los países miembros. Por ejemplo, el Aeropuerto Internacional de Ezeiza “Ministro Pistarini” tiene asignados los códigos 
+EZE en IATA y SAEZ en ICAO.
+
+A modo de ejemplo se incluye un archivo de texto llamado “aeropuertos.txt” con aproximadamente 7800 aeropuertos de todo el mundo. Este archi-vo es de los denominados 
+CSV (Comma Separated Values, valores separados por comas), es decir que cada línea contiene una serie de campos delimitados mediante puntos y comas, ya que en la 
+región la coma se utiliza como separador decimal y podrían producirse inconsistencias
+
+a) Imprimir por pantalla un listado de los aeropuertos presentes en cada provincia de Argentina. Mostrar este total al terminar de listar los aeropuertos
+b) enerar un nuevo archivo con aquellos los registros que contengan ambos códigos IATA e ICAO, sin importar el país donde se encuentre el ae-ropuerto. 
+Cada registro debe conservar el mismo formato del archivo original.
+
+"""
 def obtener_registro(ruta="aeropuertos.txt"):
     archivo = None  
     registro = []
